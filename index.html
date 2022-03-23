@@ -28,8 +28,8 @@
         </nav>
     </header>
 
-    <!-- content section -->
     <div class="container">
+        <!-- content section -->
         <section class="home" id="home">
             <h3>hi there...</h3>
             <h3 class="name">my name is <span>sunrise</span></h3>
@@ -45,6 +45,149 @@
                 <a href="#" class="fab fa-linkedin"></a>
             </div>
         </section>
+
+        <!-- about section -->
+        <section class="about" id="about">
+            <h1 class="heading">about me</h1>
+
+            <div class="content">
+                <h3 class="name">my name is <span>sunrise</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, laudantium. Nulla a odio asperiores
+                    deleniti doloribus </p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia consectetur voluptatibus tempora
+                    accusantium, rerum quasi? Voluptatibus totam dolorum, dolorem corporis in vero vitae cumque
+                    molestiae quos, culpa temporibus numquam earum!
+                </p>
+            </div>
+
+            <div class="skills">
+                <div class="progress">
+                    <h3>html <span>95%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>css <span>85%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>javascript <span>65%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>photoshop <span>70%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- service section -->
+        <section class="service" id="service">
+            <h1 class="heading">my services</h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fab fa-html5"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis</p>
+                </div>
+
+                <div class="box">
+                    <i class="fab fa-css3"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis</p>
+                </div>
+
+                <div class="box">
+                    <i class="fab fa-js"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis</p>
+                </div>
+
+                <div class="box">
+                    <i class="fab fa-wordpress"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-paint-brush"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-bullhorn"></i>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- education section -->
+        <section class="education" id="education">
+            <h1 class="heading">My Education</h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <div class="year">2017 - 2018</div>
+                    <h3>frontend development</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class="box">
+                    <div class="year">2018 - 2019</div>
+                    <h3>frontend development</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class="box">
+                    <div class="year">2019 - 2020</div>
+                    <h3>frontend development</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class="box">
+                    <div class="year">2020 - 2021</div>
+                    <h3>frontend development</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <section class="contact" id="contact">
+            <h1 class="heading">Contact me</h1>
+
+            <div class="row">
+                <form action="">
+                    <input type="text" class="box" placeholder="first name">
+                    <input type="text" class="box" placeholder="last name">
+                    <input type="email" class="box" placeholder="your email">
+                    <input type="text" class="box" placeholder="your project">
+                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                    <input type="submit" value="message" class="btn">
+                </form>
+
+                <div class="content">
+                    <div class="icons">
+                        <h3><i class="fas fa-map-marker-alt"></i>address</h3>
+                        <p>seoul, korea</p>
+                    </div>
+                    <div class="icons">
+                        <h3><i class="fas fa-envelope"></i>email</h3>
+                        <p>admin@example.com</p>
+                    </div>
+                    <div class="icons">
+                        <h3><i class="fas fa-phone"></i>phone</h3>
+                        <p>123-456-789</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+
+    <div class="theme-toggler">
+        <span style="background: linear-gradient(deeppink, purple)"></span>
+        <span style="background: linear-gradient(lightgreen, crimson)"></span>
+        <span style="background: linear-gradient(blueviolet, deeppink)"></span>
+        <span style="background: linear-gradient(coral, blueviolet)"></span>
+        <span style="background: linear-gradient(#999, #111)"></span>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script>
@@ -53,6 +196,12 @@
             typeSpeed: 120,
             loop: true
         })
+        let themeToggler = document.querySelectorAll('.theme-toggler span')
+        themeToggler.forEach(color => color.addEventListener('click', (e) => {
+            let background = color.style.background
+            document.querySelector('body').style.background = background
+        }))
+
     </script>
 </body>
 
